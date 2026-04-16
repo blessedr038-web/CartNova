@@ -5,9 +5,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 
 @Composable
-fun contactscreen(){
+fun contactscreen(navController: NavController){
 
     Column(
         modifier = Modifier.fillMaxSize()
@@ -27,6 +29,6 @@ fun contactscreen(){
 @Composable
 fun contactscreenPreview(){
 
-    contactscreen()
+    contactscreen(rememberNavController())
 
 }

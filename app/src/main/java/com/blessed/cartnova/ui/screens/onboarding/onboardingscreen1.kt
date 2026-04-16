@@ -15,6 +15,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.paint
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -22,14 +24,19 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavController
+import androidx.navigation.compose.rememberNavController
 import com.blessed.cartnova.R
+import com.blessed.cartnova.navigation.ROUTE_REGISTER
 import com.blessed.cartnova.ui.theme.newblue
 
 @Composable
-fun onboardingscreen1(){
+fun onboardingscreen1(navController: NavController){
 
     Column(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier
+            .fillMaxSize()
+            .paint(painter = painterResource(R.drawable.background), contentScale = ContentScale.FillBounds),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
 
@@ -66,11 +73,13 @@ fun onboardingscreen1(){
         Spacer(modifier = Modifier.height(30.dp) )
 
         Button(
-            onClick = {},
+            onClick = { navController.navigate(ROUTE_REGISTER)
+                      },
             colors = ButtonDefaults.buttonColors(newblue),
             shape = RoundedCornerShape(10.dp),
-            modifier = Modifier.width(350.dp)
-        ){
+            modifier = Modifier.width(200.dp)
+        )
+        {
             Text(text = "Get Started")
 
         }
@@ -99,6 +108,6 @@ fun onboardingscreen1(){
 @Composable
 fun onboardingscreen1Preview(){
 
-    onboardingscreen1()
+    onboardingscreen1(rememberNavController())
 
 }
