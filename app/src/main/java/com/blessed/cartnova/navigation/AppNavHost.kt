@@ -16,12 +16,13 @@ import com.blessed.cartnova.ui.screens.onboarding.onboardingscreen1
 import com.blessed.cartnova.ui.screens.onboarding.onboardingscreen2
 import com.blessed.cartnova.ui.screens.payment.paymentscreen
 import com.blessed.cartnova.ui.screens.service.servicescreen
+import com.blessed.cartnova.ui.screens.splash.SplashScreen
 
 @Composable
 fun AppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = ROUTE_ONBOARDINGSCREEN1
+    startDestination: String = ROUTE_SPLASH
 ) {
 
     NavHost(
@@ -67,6 +68,11 @@ fun AppNavHost(
         composable(ROUTE_INTENT) {
             IntentScreen(navController)
         }
+
+        composable(ROUTE_SPLASH) {
+            SplashScreen(navController)
+        }
+
 
 
 

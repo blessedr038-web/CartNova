@@ -121,7 +121,7 @@ fun loginscreen(navController: NavController){
             onClick = {},
             colors = ButtonDefaults.buttonColors(newblue),
             shape = RoundedCornerShape(10.dp),
-            modifier = Modifier.width(350.dp)
+            modifier = Modifier.width(200.dp)
         ){
             Text(text = "login Here")
         }

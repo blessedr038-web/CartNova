@@ -47,7 +47,7 @@ fun onboardingscreen1(navController: NavController){
         Image(
             painter = painterResource(R.drawable.img),
             contentDescription = "img",
-            modifier = Modifier.size(300.dp)
+            modifier = Modifier.size(200.dp)
 
         )
 
@@ -56,7 +56,7 @@ fun onboardingscreen1(navController: NavController){
 
         Text(
             text = "Welcome to CartNova",
-            fontSize = 40.sp,
+            fontSize = 20.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive,
             color = newblue

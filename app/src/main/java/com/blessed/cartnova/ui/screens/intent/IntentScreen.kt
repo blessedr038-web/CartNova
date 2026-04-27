@@ -59,7 +59,7 @@ fun IntentScreen(navController: NavController){
 
 
         TopAppBar(
-            title = { Text(text = "Home") },
+            title = { Text(text = "Services") },
             navigationIcon = {
 
                 IconButton(onClick = {}) {
