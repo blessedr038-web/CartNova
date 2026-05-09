@@ -49,7 +49,7 @@ fun IntentScreen(navController: NavController){
         horizontalAlignment = Alignment.CenterHorizontally,
 
 
-    ) {
+        ) {
 
         val mContext= LocalContext.current
 

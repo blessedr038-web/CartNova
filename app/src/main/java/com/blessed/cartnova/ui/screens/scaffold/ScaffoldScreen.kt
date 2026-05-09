@@ -53,11 +53,11 @@ fun ScaffoldScreen(navController: NavController){
                 },
                 colors = TopAppBarDefaults.run {
                     topAppBarColors(
-                                containerColor = newblue,
-                                titleContentColor = newblue,
-                                navigationIconContentColor = Color.White,
-                                actionIconContentColor = Color.White
-                            )
+                        containerColor = newblue,
+                        titleContentColor = newblue,
+                        navigationIconContentColor = Color.White,
+                        actionIconContentColor = Color.White
+                    )
                 },
                 actions = {
                     IconButton(onClick = {}) { Icon(imageVector = Icons.Default.ShoppingCart, contentDescription ="") }
@@ -120,7 +120,7 @@ fun ScaffoldScreen(navController: NavController){
 
                 //Main Contents of the page
 
-                
+
             }
         }
     )

@@ -109,7 +109,7 @@ fun homescreen(navController: NavController){
         //SearchBar
 
 
-         var search by remember { mutableStateOf("") }
+        var search by remember { mutableStateOf("") }
 
         TextField(
             value = search,

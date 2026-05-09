@@ -74,7 +74,7 @@ fun onboardingscreen1(navController: NavController){
 
         Button(
             onClick = { navController.navigate(ROUTE_REGISTER)
-                      },
+            },
             colors = ButtonDefaults.buttonColors(newblue),
             shape = RoundedCornerShape(10.dp),
             modifier = Modifier.width(200.dp)
@@ -92,9 +92,9 @@ fun onboardingscreen1(navController: NavController){
 
 
 
-        }
-
     }
+
+}
 
 
 
